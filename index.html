@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+            <nav class="navbar navbar-light navbar-expand-md py-3 fixed-top"
+            style="background:#ffffff; color:#262e3f; font-size: 18px; ">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img width="100" height="40"src="images/logo_JFC.png" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">最新消息</a></li>
+                        <li><a href="#video" class="nav-link">電影預告</a></li>
+                        <li><a href="#activity" class="nav-link">個人資料</a></li>
+                        <li><a href="#standard" class="nav-link">關於</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="images/maxresdefault.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/Johnny's net.png" alt="">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="images/d32ac1663ceaa1729ca648b702daf710433563a0.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 影片 -->
+    <section class="container-fluid video-area" id="video">
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3XHFDOkqmJo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+   
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>山田涼介</h3>
+                    <p>出生於日本東京都</br>
+                        2004年，加入傑尼斯事務所成為小傑尼斯</br>
+                        2007年，演出「偵探學園」並成為「hey!say!jump!」的一員出道</br>
+                        2010年，首次單獨主演電視劇《左眼偵探》</br>
+                        2013年，以個人名義發行首張單曲《Mystery Virgin》</br>
+                    2015年，《暗殺教室》獲得第39屆日本電影學院獎新人獎</br>
+                    2016年，《蚱蜢》奪得「日本電影影評人大賞」新人男優賞</br>
+                    </p>
+                    <h3>演出電影</h3>
+                    <p>暗殺教室</br>
+                        GRASSHOPPER</br>
+                        暗殺教室 -畢業編</br>
+                        解憂雜貨店</br>
+                        鋼之鍊金術師</br>
+                        記憶屋</br>
+                        燃燒吧，劍</br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/Yamada Ryosuke 「山田涼介」✮COLORS✮.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    <!-- 商品促銷活動區塊 -->
+    <section id="activity" class="activity_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/2.jpg">
+                </div>
+
+                <div class="col-md-4 activity_price text-center">
+                    <h1>Ryosuke Yamada</h1>
+                    <h2>Hey!Say!Jump!</h2>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="images/1.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 規格 -->
+    <section id="standard" class="standard_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <table class="table table-hover">
+                        <tr>
+                            <h5 scope="col">個人資料：</h5>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <th scope="row">誕生日：</th>
+                                <td>1993年5月9日</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">血型：</th>
+                                <td>B型</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">身高：</th>
+                                <td colspan="2">164cm</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">特殊才藝：</th>
+                                <td colspan="2">韓文、模仿</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">出身地</th>
+                                <td colspan="2">日本東京都</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <table class="table">
+                        <tr>
+                            <h5 scope="col">使用說明：</h5>
+                        </tr>
+                        <ul class="standard_use">
+                            <li>最喜歡的食物是草莓，而最討厭的食物是番茄跟納豆，在餵食的時候記得搞清楚！</li>
+                            <li>他心情不好時請摸摸他的頭，他會因為你開心感到開心。</li>
+                            <li>有潔癖的他會將家裡清得乾乾淨淨才舒服，請保持家中整潔。</li>
+                            <li>無使用期限，只要好好照顧他他會追隨你一輩子。</li>
+                        </ul>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 貼心提醒 -->
+    <section>
+        <div class="container content">
+            <div class="row remind">
+                <h4>無論如何</h4>
+                <div class="w-100"></div>
+                <p></p>
+                <ul>
+                    <li>無使用期限，只要好好照顧他他會追隨你一輩子。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>產品編號：01-9930509</li>
+                        <li>製作商：草莓好好吃</li>
+                        <li>客服專線：不告訴你</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>Ryosuke Yamada © 2019 Johnny & Associates.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
